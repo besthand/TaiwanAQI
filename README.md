@@ -55,8 +55,6 @@ title: 台灣 AQI
 
 ---
 
-這個中文描述會幫助使用者理解整合的功能，並且提供安裝和使用的指南。如果有任何需要調整的地方，請告訴我！
-
 # Taiwan AQI - Home Assistant Integration
 
 This custom integration for [Home Assistant](https://www.home-assistant.io/) allows you to monitor air quality from various stations in Taiwan. It fetches real-time AQI (Air Quality Index) data and provides individual sensor entities for key air quality indicators such as PM2.5, PM10, O3, NO2, SO2, CO, and AQI. Additionally, it supports manual updates through a Home Assistant service.
@@ -111,7 +109,3 @@ Feel free to fork this project, submit issues, and create pull requests. Contrib
 
 ## License
 This project is licensed under the MIT License.
-
----
-
-This description should provide a clear overview of the integration, guide users through installation and usage, and invite collaboration. Let me know if you need any further adjustments!
