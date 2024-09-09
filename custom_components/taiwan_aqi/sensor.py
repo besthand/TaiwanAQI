@@ -18,6 +18,7 @@ SENSOR_TYPES = {
 async def async_setup_entry(hass, config_entry, async_add_entities):
     """Set up Taiwan AQI sensors from a config entry."""
     coordinator = hass.data[DOMAIN][config_entry.entry_id]
+    
     # 為每個定義的感測器類型建立對應的感測器
     entities = [AQISensor(coordinator, sensor_type) for sensor_type in SENSOR_TYPES]
     async_add_entities(entities)

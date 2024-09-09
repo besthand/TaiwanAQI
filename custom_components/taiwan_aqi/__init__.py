@@ -30,7 +30,7 @@ async def service_update_aqi_data(service_call):
     """Handle the service call to update AQI data for all entities."""
     _LOGGER.info("Manually triggering AQI data update for all sensors.")
 
-    # 遍歷所有已註冊的感測器，並更新數據
+    # 更新所有已註冊的感測器的數據
     entities = []
     for entity in service_call.context:
         if isinstance(entity, AQISensor):
