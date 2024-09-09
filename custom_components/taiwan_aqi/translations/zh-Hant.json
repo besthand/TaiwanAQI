@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "設定台灣 AQI",
+        "description": "輸入您的 API 密鑰並選擇要監控的測站，以取得空氣品質數據。",
+        "data": {
+          "api_key": "API 密鑰",
+          "station": "測站"
+        }
+      }
+    },
+    "error": {
+      "invalid_api_key": "您輸入的 API 密鑰無效。"
+    },
+    "abort": {
+      "already_configured": "此測站已被配置。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "修改台灣 AQI 選項",
+        "description": "調整監控空氣品質的測站或 API 密鑰。",
+        "menu_options": {
+          "set_station": "設定測站",
+          "set_api_key": "設定 API 密鑰"
+        }
+      }
+    }
+  }
+}

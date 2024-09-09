@@ -1,0 +1,10 @@
+{
+  "domain": "taiwan_aqi",
+  "name": "Taiwan AQI",
+  "version": "1.0",
+  "documentation": "https://data.moenv.gov.tw/swagger/",
+  "requirements": [],
+  "codeowners": ["@besthand"],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}

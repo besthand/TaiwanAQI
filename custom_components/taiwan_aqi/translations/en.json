@@ -1,0 +1,20 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "title": "Set up Taiwan AQI",
+          "description": "Select the city-station combination you want to monitor.",
+          "data": {
+            "station": "City-Station"
+          }
+        }
+      },
+      "error": {
+        "invalid_station": "The selected station is invalid."
+      },
+      "abort": {
+        "already_configured": "This station is already configured."
+      }
+    }
+  }
+  
