@@ -78,7 +78,17 @@ class AQICoordinator(DataUpdateCoordinator):
             # 過濾出選定的測站資料
             for record in data["records"]:
                 if record["sitename"] == station:
-                    return record
+                    # 確保數值是以數字形式處理，如果是文字，將其轉換為浮點數或整數
+                    return {
+                        "aqi": int(record.get("aqi", 0)),  # 將 AQI 轉換為整數
+                        "pm2.5": float(record.get("pm2.5", 0)),  # 將 PM2.5 轉換為浮點數
+                        "pm10": float(record.get("pm10", 0)),  # 將 PM10 轉換為浮點數
+                        "o3": float(record.get("o3", 0)),  # 將 O3 轉換為浮點數
+                        "no2": float(record.get("no2", 0)),  # 將 NO2 轉換為浮點數
+                        "so2": float(record.get("so2", 0)),  # 將 SO2 轉換為浮點數
+                        "co": float(record.get("co", 0)),  # 將 CO 轉換為浮點數
+                        "publishtime": record.get("publishtime", "N/A")  # 保留時間作為文字
+                    }
             return None
         except Exception as e:
             _LOGGER.error(f"Error while fetching data from API for station {station}: {e}")

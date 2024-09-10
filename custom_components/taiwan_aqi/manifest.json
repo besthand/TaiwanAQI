@@ -1,7 +1,7 @@
 {
   "domain": "taiwan_aqi",
   "name": "Taiwan AQI",
-  "version": "1.0",
+  "version": "1.01",
   "documentation": "https://data.moenv.gov.tw/swagger/",
   "requirements": [],
   "codeowners": ["@besthand"],
