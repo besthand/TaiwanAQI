@@ -32,21 +32,6 @@
 ## 使用方式
 - 安裝完成後，你將會看到各個空氣品質指標的感測器實體。
 
-## Lovelace 卡片範例
-
-```yaml
-type: entities
-entities:
-  - entity: sensor.aqi_sensor
-  - entity: sensor.pm2_5_sensor
-  - entity: sensor.pm10_sensor
-  - entity: sensor.o3_sensor
-  - entity: sensor.no2_sensor
-  - entity: sensor.so2_sensor
-  - entity: sensor.co_sensor
-title: 台灣 AQI
-```
-
 ## 貢獻
 歡迎 fork 此專案、提交問題、並建立 pull requests。任何貢獻都十分歡迎！
 
@@ -88,21 +73,6 @@ This custom integration for [Home Assistant](https://www.home-assistant.io/) all
 
 ## Usage
 - After installation, you will see sensor entities created for each air quality indicator.
-
-## Example Lovelace Card
-
-```yaml
-type: entities
-entities:
-  - entity: sensor.aqi_sensor
-  - entity: sensor.pm2_5_sensor
-  - entity: sensor.pm10_sensor
-  - entity: sensor.o3_sensor
-  - entity: sensor.no2_sensor
-  - entity: sensor.so2_sensor
-  - entity: sensor.co_sensor
-title: Taiwan AQI
-```
 
 ## Contributions
 Feel free to fork this project, submit issues, and create pull requests. Contributions are welcome!
